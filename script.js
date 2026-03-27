@@ -1,5 +1,3 @@
-/* */
-
 const container = document.querySelector("#container");
 createGrid(3, container);
 hover()
