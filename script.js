@@ -6,9 +6,10 @@ hover()
 
 const button = document.querySelector("button");
 button.addEventListener("click", event => {
-    let gridPerSide = prompt(`Enter number of grid per side; `);
-    if (gridPerside > 100) {
-        alert("Invalid number! Please enter a number between 1 and 100.");
+    let gridPerSide = prompt(`Enter number of grid per side (1-100): `);
+
+    if (isNaN(gridPerSide) || gridPerSide > 100 || gridPerSide < 1) {
+        alert("Invalid input! Please enter a number between 1 and 100.");
         return;
     }
     removeGrid(container);
@@ -38,7 +39,13 @@ function createGrid(gridPerside, container){
         } 
     }
  
-    console.log("Grid created " + gridsPerSide + "x" + gridsPerSide);
+    console.log("Grid created " + gridPerSide + "x" + gridPerSide);
+
+}
+
+
+function hover() {
+
 }
 
 
