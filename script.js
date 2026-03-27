@@ -31,12 +31,12 @@ function createGrid(gridPerside, container){
         for (let j = 0; j < gridPerside; j++) {
             let grid = document.createElement("div");
             grid.classList.add("grid");
+            
+            const randomColor = Math.floor(Math.random()*16777215).toString(16);
+            grid.style.background = "#" + randomColor;
+            grid.style.oppacity = 0;
         }
     }
-
-    const randomColor = Math.floor(Math.random()*16777215).toString(16);
-    grid.style.background = "#" + randomColor;
-    grid.style.oppacity = 0;
 
     container.appendChild(grid);
 
