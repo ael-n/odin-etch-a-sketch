@@ -1,7 +1,7 @@
 /* */
 
 const divContainer = document.querySelector("container");
-const btnStart = document.querySelector("start");
+const button = document.querySelector("button");
 
 
 
