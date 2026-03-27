@@ -1,7 +1,7 @@
 /* */
 
 const divContainer = document.querySelector("#container");
-craeteGrid(3, container);
+createGrid(3, container);
 hover()
 
 /* Creer une nouvelle grille */
@@ -23,6 +23,14 @@ button.addEventListener("click", event => {
 /* Fonction qui cree la grille */
 
 function createGrid(gridPerside, container){
+
+    for (let i = 0; i <= gridPerside; i++) {
+        for (let j = 0; j <= gridPerside; j++) {
+            let grid = document.createElement("div");
+            grid.classList.add("grid");
+            container.appendChild(grid);
+        }
+    }
 
 }
 
