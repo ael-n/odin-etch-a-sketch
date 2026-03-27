@@ -33,13 +33,14 @@ function createGrid(gridPerside, container){
             const randomColor = Math.floor(Math.random()*16777215).toString(16);
             grid.style.background = "#" + randomColor;
             grid.style.oppacity = 0;
-        }
+            
+            container.appendChild(grid);
+        } 
     }
-
-    container.appendChild(grid);
-
-
+ 
+    console.log("Grid created " + gridsPerSide + "x" + gridsPerSide);
 }
+
 
 
 
