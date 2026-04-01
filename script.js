@@ -45,7 +45,7 @@ function createGrid(gridPerside, container){
 
 function removeGrid (container) {
     while (container.childElementCount > 0 ) {
-        grid = document.querySelector(".grid");
+        let grid = document.querySelector(".grid");
          container.removeChild(grid);
     }
 }
