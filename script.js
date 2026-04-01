@@ -43,6 +43,12 @@ function createGrid(gridPerside, container){
 
 }
 
+function removeGrid (container) {
+    while (container.childElementCount > 0 ) {
+        grid = document.querySelector(".grid");
+         container.removeChild(grid);
+    }
+}
 
 function hover() {
     const grids = document.querySelectorAll(".grid");
