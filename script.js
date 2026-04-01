@@ -45,7 +45,13 @@ function createGrid(gridPerside, container){
 
 
 function hover() {
-
+    const grids = document.querySelectorAll(".grid");
+    grids.forEach((grid) => {
+        grid.addEventListener("mouseover", event => {
+            grid.style.opacity = parseFloat(grid.style.opacity) + 0.1;
+            console.log(grid.style.opacity);
+        });
+    });
 }
 
 
