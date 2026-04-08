@@ -10,7 +10,7 @@ button.addEventListener("click", event => {
         alert("Invalid input! Please enter a number between 1 and 100.");
         return;
     }
-    
+
     removeGrid(container);
     createGrid(gridPerSide, container);
     hover();
@@ -18,7 +18,7 @@ button.addEventListener("click", event => {
 
 function createGrid(gridPerside, container){
     let containerWidth = parseInt(window.getComputedStyle(container).width);
-    let gridSize = (containerWidth / gridPerside) - 2;
+    let gridSize = (containerWidth / gridPerside);
     
     for (let i = 0; i < gridPerside; i++) {
         for (let j = 0; j < gridPerside; j++) {
